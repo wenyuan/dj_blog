@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+django==1.11.16
+pillow==5.3.0
+
+# markdown编辑器
+markdown==3.0.1
+
+# 代码高亮
+pygments==2.2.0

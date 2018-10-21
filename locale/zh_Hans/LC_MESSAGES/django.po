@@ -1,0 +1,42 @@
+# ------------------------ model ------------------------
+# Category model
+msgid "category"
+msgstr "博客分类"
+
+# Tag model
+msgid "tag"
+msgstr "标签"
+
+# Entry model
+msgid "blog title"
+msgstr "文章标题"
+
+msgid "blogger"
+msgstr "博客作者"
+
+msgid "blog img"
+msgstr "博客配图"
+
+msgid "blog body"
+msgstr "博客正文"
+
+msgid "blog abstract"
+msgstr "博客摘要"
+
+msgid "blog visiting"
+msgstr "博客访问量"
+
+msgid "blog categories"
+msgstr "博客分类"
+
+msgid "blog tags"
+msgstr "博客标签"
+
+msgid "created time"
+msgstr "创建时间"
+
+msgid "updated time"
+msgstr "更新时间"
+
+msgid "blog"
+msgstr "博客"
