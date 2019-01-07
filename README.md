@@ -1,6 +1,7 @@
-# Django Blog
-> 基于django写的博客系统。
-> 去除所有冗余功能，可直接运行、部署、使用。
+# DJ Blog
+> 基于django的开源博客系统。 </br>
+> 包含一套个人博客应有的基本功能，可直接运行、部署、使用。 </br>
+> 后期能很方便的进行UI个性化修改和功能扩展。 </br>
 
 ## 环境
 * Linux
@@ -8,8 +9,8 @@
 
 ## 部署和运行方式
 ```
-	Step1. gitclone https://github.com/xwenyuan/django_blog.git</br>
-	Step2. cd django_blog
+	Step1. gitclone https://github.com/winyuan/dj_blog.git</br>
+	Step2. cd dj_blog
            pip install -r requirements.txt
            python manage.py makemigrations
            python manage.py migrate
@@ -29,5 +30,7 @@
 * rss
 
 ## 主要更新记录
+* 2019.01.07
+  * 部分重构，优化项目结构
 * 2018.10.21
   * 提交代码

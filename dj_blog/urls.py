@@ -1,4 +1,4 @@
-"""django_blog URL Configuration
+"""dj_blog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -21,9 +21,9 @@ from django.conf import settings
 from django.contrib.sitemaps import GenericSitemap
 from django.contrib.sitemaps.views import sitemap
 
-from apps.blog.models import Entry
-from apps.blog.feed import LatestEntriesFeed
-from apps.blog import views as blog_views
+from project_apps.blog.models import Entry
+from project_apps.blog.feed import LatestEntriesFeed
+from project_apps.blog import views as blog_views
 
 info_dict = {
     'queryset': Entry.objects.all(),
@@ -32,7 +32,8 @@ info_dict = {
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^blog/', include('apps.blog.urls')),
+    url(r'^$', blog_views.index),
+    url(r'^blog/', include('project_apps.blog.urls')),
     url(r'^latest/feed/$', LatestEntriesFeed()),
     url(r'^sitemap\.xml$', sitemap, {'sitemaps': {'blog': GenericSitemap(info_dict, priority=0.6)}},
         name='django.contrib.sitemaps.views.sitemap'),
